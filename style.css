@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-nav {
+    width: 100%;
+    background-color: #2874f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+}
+
+.img1 {
+    display: flex;
+}
+
+#logo {
+    width: 100px;
+    height: 30px;
+}
+
+.serch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10px;
+    width: 40%;
+    border: none;
+    background-color: white;
+    height: 30px;
+    cursor: pointer;
+}
+
+#serch {
+    width: 100%;
+    height: 30px;
+    border: none;
+    padding: 5px;
+}
+
+#icon-serch {
+    background: white;
+}
+
+.login {
+    margin-left: 40px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+}
+
+a:hover {
+    color: #2874f0;
+}
+
+.p1s2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 2px 1px rgba(225, 225, 255, 0.9);
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+.s2i1 {
+    width: 64px;
+    height: 64px;
+}
+
+
+/* slide show 1  */
+
+.slideshow1 {
+    display: block;
+    padding: 8px;
+    box-shadow: 2px 2px 2px 1px rgba(225, 225, 255, 0.9);
+}
+
+.slideshowContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 240px;
+    cursor: pointer;
+}
+
+.imageSlides {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: -1;
+}
+
+
+/* add 'visible' class via Javascript */
+
+.visible {
+    opacity: 1;
+}
+
+.slideshowArrow {
+    font-size: 7em;
+    color: black;
+    cursor: pointer;
+    background-color: white;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.slideshowArrow:hover {
+    opacity: 0.75;
+}
+
+.leftArrow {
+    position: absolute;
+    left: 1.392%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.rightArrow {
+    position: absolute;
+    right: -1.395%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px 0px 0px 10px;
+}
